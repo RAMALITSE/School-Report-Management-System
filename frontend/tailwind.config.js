@@ -1,6 +1,5 @@
-// frontend/tailwind.config.js
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
     content: [
       "./index.html",
       "./src/**/*.{js,ts,jsx,tsx}",
@@ -10,14 +9,14 @@ export default {
         colors: {
           lra: {
             blue: {
-              light: '#2196F3',  // Light blue
-              DEFAULT: '#0D47A1', // Primary blue
-              dark: '#002171',    // Dark blue
+              light: '#2196F3',
+              DEFAULT: '#0D47A1',
+              dark: '#002171',
             },
             gold: {
-              light: '#FFD700',   // Light gold
-              DEFAULT: '#FFC107', // Primary gold
-              dark: '#FFA000',    // Dark gold
+              light: '#FFD700',
+              DEFAULT: '#FFC107',
+              dark: '#FFA000',
             },
             gray: {
               light: '#F5F5F5',
@@ -25,12 +24,9 @@ export default {
               dark: '#616161',
             }
           }
-        },
-        fontFamily: {
-          sans: ['Inter', 'sans-serif'],
-          heading: ['Poppins', 'sans-serif'],
         }
       },
     },
     plugins: [],
-  }
+  };
+  
